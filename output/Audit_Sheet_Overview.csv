@@ -1,0 +1,8 @@
+"sheet_name","total_rows","total_cols","header_row_sample","row2_sample"
+"Inflasi Cleaned (kurang",12,184,"NA | Tahun | NA | NA | NA","Negara | 201001 | 201002 | 201003 | 201004"
+"PDB",11,17,"Negara | 2010 | 2011 | 2012 | 2013","Indonesia | 6.2238541806236611 | 6.1697842077100802 | 6.0300506530561506 | 5.5572636889100977"
+"Money Growth (kurang)",11,17,"Negara | 2010 | 2011 | 2012 | 2013","Indonesia | 15.402287770881854 | 16.429783845900381 | 14.954992482017632 | 12.779697944543278"
+"FAO Cleaned",193,2,"Date | Food Price Index","40179 | 101.85647614185601"
+"REER Cleaned (kurang)",193,11,"Month | Brunei Darussalam | Cambodia | Indonesia | Malaysia","2010M01 | 103.9 | 106.45959962352501 | 108.98977338500634 | 99.143824896092241"
+"Federal Funds Rate Cleaned",193,2,"Monthly | Data","40179 | 0.11"
+"Oil",193,2,"Monthly | Data","40179 | 76.17"

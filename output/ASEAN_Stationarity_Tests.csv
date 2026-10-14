@@ -1,0 +1,20 @@
+"variable","test_name","statistic","p_value","conclusion","category","test_type","transformation","stationary","scope","adf_level_stat","adf_level_pval","kpss_level_stat","kpss_level_pval","adf_diff_stat","adf_diff_pval","integration_order"
+"inflation_yoy","Pesaran CD (2004)",10.0285,1.14228403193879e-23,"Tolak H0: Terdapat Cross-Sectional Dependence Signifikan","Cross-Sectional Dependence",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"gdp_growth","Pesaran CD (2004)",25.5815,2.44857810618464e-144,"Tolak H0: Terdapat Cross-Sectional Dependence Signifikan","Cross-Sectional Dependence",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"money_growth","Pesaran CD (2004)",9.2713,1.83933140036049e-20,"Tolak H0: Terdapat Cross-Sectional Dependence Signifikan","Cross-Sectional Dependence",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"reer_yoy","Pesaran CD (2004)",6.1221,9.2369849681306e-10,"Tolak H0: Terdapat Cross-Sectional Dependence Signifikan","Cross-Sectional Dependence",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"hcpi_q","Pesaran CD (2004)",44.7767,0,"Tolak H0: Terdapat Cross-Sectional Dependence Signifikan","Cross-Sectional Dependence",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"reer_q","Pesaran CD (2004)",-1.3183,0.187411261176636,"Gagal Tolak H0: Tidak Ada Bukti CD","Cross-Sectional Dependence",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"inflation_yoy",NA,-1.4393,0.075,NA,"Panel Unit Root","Levin-Lin-Chu Panel Unit Root","Level / Growth Form","Non-Stasioner I(1)",NA,NA,NA,NA,NA,NA,NA,NA
+"inflation_yoy",NA,62.3571,0,NA,"Panel Unit Root","Fisher-type Panel ADF (Maddala-Wu)","Level / Growth Form","Stasioner I(0)",NA,NA,NA,NA,NA,NA,NA,NA
+"gdp_growth",NA,-1.5904,0.0559,NA,"Panel Unit Root","Levin-Lin-Chu Panel Unit Root","Level / Growth Form","Non-Stasioner I(1)",NA,NA,NA,NA,NA,NA,NA,NA
+"gdp_growth",NA,51.189,1e-04,NA,"Panel Unit Root","Fisher-type Panel ADF (Maddala-Wu)","Level / Growth Form","Stasioner I(0)",NA,NA,NA,NA,NA,NA,NA,NA
+"reer_yoy",NA,-3.0009,0.0013,NA,"Panel Unit Root","Levin-Lin-Chu Panel Unit Root","Level / Growth Form","Stasioner I(0)",NA,NA,NA,NA,NA,NA,NA,NA
+"reer_yoy",NA,86.6992,0,NA,"Panel Unit Root","Fisher-type Panel ADF (Maddala-Wu)","Level / Growth Form","Stasioner I(0)",NA,NA,NA,NA,NA,NA,NA,NA
+"inflation_yoy",NA,NA,NA,NA,"Time Series Unit Root",NA,NA,NA,"ASEAN Regional Aggregate",-2.782,0.2593,0.234,0.1,-4.747,0.01,"I(0) - Stasioner pada Bentuk Transformasi"
+"gdp_growth",NA,NA,NA,NA,"Time Series Unit Root",NA,NA,NA,"ASEAN Regional Aggregate",-2.076,0.5439,0.37,0.09,-4.296,0.01,"I(0) - Stasioner pada Bentuk Transformasi"
+"money_growth",NA,NA,NA,NA,"Time Series Unit Root",NA,NA,NA,"ASEAN Regional Aggregate",-1.866,0.6289,0.728,0.011,-4.877,0.01,"I(1) - Stasioner pada First Difference"
+"reer_yoy",NA,NA,NA,NA,"Time Series Unit Root",NA,NA,NA,"ASEAN Regional Aggregate",-2.481,0.3805,0.137,0.1,-6.544,0.01,"I(0) - Stasioner pada Bentuk Transformasi"
+"fao_yoy",NA,NA,NA,NA,"Time Series Unit Root",NA,NA,NA,"Global / External",-3.818,0.0238,0.088,0.1,-4.657,0.01,"I(0) - Stasioner pada Bentuk Transformasi"
+"ffr_change",NA,NA,NA,NA,"Time Series Unit Root",NA,NA,NA,"Global / External",-2.796,0.2534,0.108,0.1,-4.247,0.01,"I(0) - Stasioner pada Bentuk Transformasi"
+"oil_yoy",NA,NA,NA,NA,"Time Series Unit Root",NA,NA,NA,"Global / External",-3.57,0.0436,0.101,0.1,-4.376,0.01,"I(0) - Stasioner pada Bentuk Transformasi"

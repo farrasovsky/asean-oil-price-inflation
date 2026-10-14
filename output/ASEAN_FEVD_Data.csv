@@ -1,0 +1,13 @@
+"response_variable","horizon","gdp_growth","money_growth","reer_yoy","inflation_yoy"
+"inflation_yoy",1,9.02,3.07,9.12,78.79
+"inflation_yoy",2,10.3,2.26,19.27,68.17
+"inflation_yoy",3,8.49,1.55,33.69,56.26
+"inflation_yoy",4,6.34,1.57,44.41,47.68
+"inflation_yoy",5,5.75,1.68,48.93,43.64
+"inflation_yoy",6,7.22,1.62,48.82,42.34
+"inflation_yoy",7,10.38,1.5,46.45,41.67
+"inflation_yoy",8,14.13,1.44,43.85,40.58
+"inflation_yoy",9,17.21,1.38,42.14,39.27
+"inflation_yoy",10,18.9,1.4,41.42,38.28
+"inflation_yoy",11,19.27,1.83,41.21,37.69
+"inflation_yoy",12,18.98,3.06,40.81,37.15

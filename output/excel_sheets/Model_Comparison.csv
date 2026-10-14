@@ -1,0 +1,6 @@
+"specification","n_obs","r_squared","adj_r_squared","lag1_inf_coef","lag1_inf_pval","oil_shock_coef","oil_shock_pval","fao_shock_coef","fao_shock_pval","ffr_shock_coef","ffr_shock_pval"
+"Model Utama: VARX(2) Full Sample (2011-2025)",57,0.9402,0.9249,0.7746,0,0.0114,8e-04,0.0236,0.0413,1.1712,0
+"Sensitivitas Lag 1: VARX(1)",57,0.934,0.9244,0.7831,0,0.0073,0.0089,0.03,0.0023,1.0574,0
+"Sensitivitas Lag 3: VARX(3)",57,0.945,0.9233,0.7346,0,0.0118,0.002,0.0213,0.089,1.3669,0
+"Sensitivitas Periode: Pre-COVID (2011-2019)",36,0.945,0.9175,0.721,1e-04,0.0148,4e-04,-0.0148,0.2416,-1.1494,0.1706
+"Sensitivitas Imputasi: Core 8 Negara (Eksklusi Laos & Myanmar)",57,0.9401,0.9248,0.6026,0,0.0099,3e-04,0.0193,0.0529,0.601,6e-04

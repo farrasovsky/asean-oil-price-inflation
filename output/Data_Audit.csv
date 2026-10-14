@@ -1,0 +1,41 @@
+"country","variable","source_sheet","start_period","end_period_recorded","total_periods","missing_count","missing_pct","notes","end_period"
+"Indonesia","HCPI","Inflasi Cleaned (kurang","201001","202502",183,0,0,"Lengkap/Hampir lengkap",NA
+"Malaysia","HCPI","Inflasi Cleaned (kurang","201001","202502",183,1,0.55,"Lengkap/Hampir lengkap",NA
+"Brunei Darussalam","HCPI","Inflasi Cleaned (kurang","201001","202502",183,1,0.55,"Lengkap/Hampir lengkap",NA
+"Thailand","HCPI","Inflasi Cleaned (kurang","201001","202502",183,6,3.28,"Beberapa bulan di akhir sampel belum terisi",NA
+"Singapore","HCPI","Inflasi Cleaned (kurang","201001","202502",183,3,1.64,"Beberapa bulan di akhir sampel belum terisi",NA
+"Vietnam","HCPI","Inflasi Cleaned (kurang","201001","202502",183,0,0,"Lengkap/Hampir lengkap",NA
+"Laos (Lao PDR)","HCPI","Inflasi Cleaned (kurang","201001","202502",183,0,0,"Lengkap/Hampir lengkap",NA
+"Cambodia","HCPI","Inflasi Cleaned (kurang","201001","202502",183,8,4.37,"Beberapa bulan di akhir sampel belum terisi",NA
+"Myanmar","HCPI","Inflasi Cleaned (kurang","201001","202502",183,52,28.42,"Banyak periode akhir kosong",NA
+"Philipines","HCPI","Inflasi Cleaned (kurang","201001","202502",183,0,0,"Lengkap/Hampir lengkap",NA
+"Indonesia","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Malaysia","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Brunei Darussalam","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Thailand","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Singapore","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Vietnam","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Laos (Lao PDR)","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Cambodia","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Myanmar","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Philipines","GDP_Growth","PDB","2010",NA,16,0,0,"Data tahunan lengkap tanpa missing","2025"
+"Indonesia","Money_Growth","Money Growth (kurang)","2010",NA,16,0,0,"Lengkap 2010-2025","2025"
+"Malaysia","Money_Growth","Money Growth (kurang)","2010",NA,16,0,0,"Lengkap 2010-2025","2025"
+"Brunei Darussalam","Money_Growth","Money Growth (kurang)","2010",NA,16,0,0,"Lengkap 2010-2025","2025"
+"Thailand","Money_Growth","Money Growth (kurang)","2010",NA,16,0,0,"Lengkap 2010-2025","2025"
+"Singapore","Money_Growth","Money Growth (kurang)","2010",NA,16,5,31.25,"Tersedia s.d. 2020","2025"
+"Vietnam","Money_Growth","Money Growth (kurang)","2010",NA,16,3,18.75,"Tersedia s.d. 2022","2025"
+"Laos (Lao PDR)","Money_Growth","Money Growth (kurang)","2010",NA,16,15,93.75,"Hanya tersedia tahun 2010","2025"
+"Cambodia","Money_Growth","Money Growth (kurang)","2010",NA,16,3,18.75,"Tersedia s.d. 2022","2025"
+"Myanmar","Money_Growth","Money Growth (kurang)","2010",NA,16,5,31.25,"Tersedia s.d. 2020","2025"
+"Philipines","Money_Growth","Money Growth (kurang)","2010",NA,16,3,18.75,"Tersedia s.d. 2022","2025"
+"Brunei Darussalam","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Cambodia","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Indonesia","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Malaysia","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Myanmar","REER","REER Cleaned (kurang)","2010M01",NA,192,27,14.06,"27 observasi awal (2010M01-2012M03) kosong sebelum float","2025M12"
+"Thailand","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Philipines","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Singapore","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Vietnam","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"
+"Laos (Lao PDR)","REER","REER Cleaned (kurang)","2010M01",NA,192,0,0,"Lengkap 192 bulan","2025M12"

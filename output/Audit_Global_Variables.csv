@@ -1,0 +1,4 @@
+"variable","source_sheet","frequency","start_period","end_period","total_periods","missing_count","missing_pct","notes"
+"FAO_Food_Price_Index","FAO Cleaned","Bulanan","2010-01-01","2025-12-01",192,0,0,"Variabel global/common shocks, lengkap tanpa missing values"
+"Federal_Funds_Rate","Federal Funds Rate Cleaned","Bulanan","2010-01-01","2025-12-01",192,0,0,"Variabel global/common shocks, lengkap tanpa missing values"
+"Crude_Oil_Price","Oil","Bulanan","2010-01-01","2025-12-01",192,0,0,"Variabel global/common shocks, lengkap tanpa missing values"

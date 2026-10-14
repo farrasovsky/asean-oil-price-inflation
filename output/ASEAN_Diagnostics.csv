@@ -1,0 +1,7 @@
+"diagnostic_test","statistic","parameter_df","p_value","evaluation"
+"System Stability (Eigenvalues of Companion Matrix)",0.9719,8,NA,"Sistem Stabil (Semua Modulus Akar < 1)"
+"Residual Autocorrelation (Portmanteau Test, lag=10)",196.53,128,9.4e-05,"Terdapat Autokorelasi Residual Dinamis"
+"Heteroskedasticity (Multivariate ARCH Test, lag=4)",406.4,400,0.4019,"Lolos Uji: Homoskedastisitas Terpenuhi (Tidak Ada Efek ARCH)"
+"Residual Normality (Multivariate Jarque-Bera Test)",14.02,8,0.0813,"Lolos Uji: Residual Berdistribusi Normal"
+"Residual Skewness Test",4.8,4,0.3083,"Asimetri Simetris"
+"Residual Kurtosis Test",9.22,4,0.0559,"Kurtosis Normal Mesokurtik"

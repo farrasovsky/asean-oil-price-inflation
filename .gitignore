@@ -1,0 +1,14 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# R environment & temp files
+.Rhistory
+.RData
+.Rproj.user
+r_libs/
+
+# Python cache
+__pycache__/
+*.pyc
+

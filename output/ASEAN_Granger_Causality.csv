@@ -1,0 +1,5 @@
+"cause_variable","test_type","f_statistic","df1","df2","p_value","conclusion","instantaneous_p_value"
+"inflation_yoy","Granger Causality (Wald F-Test)",2.4915,6,172,0.0245,"Tolak H0: Memiliki Kausalitas Prediktif Signifikan",0.022
+"gdp_growth","Granger Causality (Wald F-Test)",2.561,6,172,0.0212,"Tolak H0: Memiliki Kausalitas Prediktif Signifikan",0.0054
+"money_growth","Granger Causality (Wald F-Test)",2.4026,6,172,0.0296,"Tolak H0: Memiliki Kausalitas Prediktif Signifikan",0.0078
+"reer_yoy","Granger Causality (Wald F-Test)",2.7355,6,172,0.0145,"Tolak H0: Memiliki Kausalitas Prediktif Signifikan",0.0097
