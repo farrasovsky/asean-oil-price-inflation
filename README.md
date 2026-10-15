@@ -51,7 +51,8 @@ olah_oil/
 │   ├── Validation_Report.csv                   # Matriks checklist validasi kualitas
 │   └── figures/                                # 9 Grafik visualisasi beresolusi tinggi (300 DPI)
 └── reports/
-    └── Laporan_Inflasi_ASEAN.html              # Laporan penelitian akademik lengkap (Bab I - V)
+    ├── Laporan_Inflasi_ASEAN.html              # Laporan penelitian akademik lengkap (Bab I - V)
+    └── Panduan_Statistik_Mudah_Inflasi_ASEAN.html # Panduan statistik & ekonometrika versi bahasa awam/super mudah
 ```
 
 ---

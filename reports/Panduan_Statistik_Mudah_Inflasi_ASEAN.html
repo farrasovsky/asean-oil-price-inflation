@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panduan Statistik & Ekonometrika Inflasi ASEAN: Versi Bahasa Super Mudah</title>
+  <style>
+    :root {
+      --primary: #1B365D;
+      --primary-light: #2B6CB0;
+      --accent: #D69E2E;
+      --success: #38A169;
+      --danger: #E53E3E;
+      --bg: #F7FAFC;
+      --card-bg: #FFFFFF;
+      --text: #2D3748;
+      --text-muted: #718096;
+      --border: #E2E8F0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      background: var(--card-bg);
+      padding: 50px 65px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    .hero {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+    }
+    .badge-top {
+      display: inline-block;
+      background: #EBF8FF;
+      color: var(--primary-light);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      color: var(--primary);
+      font-size: 30px;
+      line-height: 1.3;
+      margin: 0 0 12px 0;
+    }
+    .lead {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 22px;
+      margin-top: 45px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #EDF2F7;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h3 {
+      color: var(--primary-light);
+      font-size: 17px;
+      margin-top: 25px;
+    }
+    p, li {
+      font-size: 15px;
+      color: #334155;
+    }
+    .analogi-box {
+      background: #FEFCBF;
+      border-left: 5px solid #D69E2E;
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .analogi-title {
+      font-weight: 700;
+      color: #744210;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .awam-box {
+      background: #EBF8FF;
+      border-left: 5px solid #3182CE;
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .awam-title {
+      font-weight: 700;
+      color: #2B6CB0;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .danger-box {
+      background: #FFF5F5;
+      border-left: 5px solid #E53E3E;
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .danger-title {
+      font-weight: 700;
+      color: #9B2C2C;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 25px 0;
+    }
+    .card {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .card-num {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary-light);
+      margin-bottom: 4px;
+    }
+    .card-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .card-desc {
+      font-size: 13.5px;
+      color: #475569;
+      margin-top: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13.5px;
+    }
+    th {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 11px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    tr:nth-child(even) {
+      background: #F8FAFC;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 700;
+    }
+    .badge-green { background: #C6F6D5; color: #22543D; }
+    .badge-blue { background: #BEE3F8; color: #2C5282; }
+    .badge-orange { background: #FEEBC8; color: #7B341E; }
+    .quote-takeaway {
+      border: 2px dashed #CBD5E0;
+      background: #F7FAFC;
+      padding: 20px 25px;
+      border-radius: 8px;
+      margin: 30px 0;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .footer {
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="hero">
+    <div class="badge-top">Panduan Bahasa Awam &bullet; Non-Teknis</div>
+    <h1>Bedah Statistik & Ekonometrika Dinamika Inflasi ASEAN: Dari Nol Sampai Mengerti</h1>
+    <p class="lead">Mengapa angka-angka di Excel diolah sedemikian rupa? Apa arti rumus-rumus rumit seperti VAR, Pesaran CD, Lag, IRF, dan FEVD? Di sini semuanya diterjemahkan ke dalam logika sehari-hari yang sangat mudah dipahami.</p>
+  </div>
+
+  <!-- BAB 1 -->
+  <h2>1. Mengapa Data Mentah Tidak Boleh Langsung Dipakai? (Misteri Data Makro)</h2>
+  <p>
+    Banyak orang mengira mengolah data inflasi itu tinggal memasukkan angka dari Excel ke grafik, lalu selesai. Kenyataannya, data ekonomi makro yang baru keluar dari sumber (file mentah) itu ibarat <strong>beras yang baru dipanen</strong>: penuh kerikil, kulit gabah, dan belum matang. Kalau langsung dimakan, perut sakit.
+  </p>
+
+  <h3>A. Jebakan Indeks Harga (HCPI) vs Tingkat Inflasi</h3>
+  <div class="analogi-box">
+    <div class="analogi-title">💡 Analogi Berat Badan vs Kenaikan Berat Badan</div>
+    HCPI (Harmonized Consumer Price Index) itu seperti <strong>angka di timbangan berat badanmu</strong> (misalnya: 75 kg).<br>
+    Sedangkan inflasi adalah <strong>berapa kilogram berat badanmu bertambah dalam 1 tahun terakhir</strong> (misalnya: naik 5 kg).<br>
+    Kalau berat badanmu 75 kg, kamu tidak bisa bilang "berat badanku naik 75%!". Itu salah fatal!
+  </div>
+  <p>
+    Di sheet sumber, angka yang tercantum adalah <em>indeks harga</em> (misal angka 120 atau 130). Oleh karena itu, langkah pertama yang wajib dihitung adalah <strong>perubahan persentase tahunannya (YoY)</strong>:
+  </p>
+  <div class="awam-box">
+    <div class="awam-title">Rumus yang Kita Pakai (Bahasa Sederhana)</div>
+    <strong>Inflasi Kuartalan Tahun Ini = ((Harga Kuartal Ini / Harga Kuartal yang Sama Tahun Lalu) - 1) &times; 100%</strong><br>
+    Karena butuh membandingkan dengan 4 kuartal sebelumnya, maka data di 4 kuartal pertama tahun 2010 secara alami belum punya angka inflasi tahunan (bukan nol, tapi belum ada pembandingnya).
+  </div>
+
+  <h3>B. Dosa Besar: Membagi Pertumbuhan PDB Tahunan Menjadi 4 Bagian</h3>
+  <p>
+    Data Pertumbuhan PDB di sumber tersedia dalam format tahunan (misal Indonesia tumbuh 5.5% setahun).
+    Bolehkah kita membagi 5.5% itu menjadi 4 sehingga tiap kuartal jadi 1.375%? <strong>Sangat TIDAK BOLEH!</strong>
+  </p>
+  <div class="danger-box">
+    <div class="danger-title">⚠️ Kenapa Membagi 4 Itu Salah?</div>
+    Pertumbuhan itu adalah <strong>laju kecepatan</strong>, bukan barang tumpukan roti yang bisa dipotong 4 kue.<br>
+    Kalau mobil berjalan dengan kecepatan rata-rata 60 km/jam selama 1 jam, bukan berarti dalam 15 menit pertama kecepatannya 15 km/jam! Kecepatannya tetap sekitar 60 km/jam.<br>
+    Untuk mengatasi ini, kita menggunakan metode <strong>Denton-Cholette</strong>: sebuah cara matematis untuk membuat lintasan kuartalan yang mulus dan wajar, tetapi rata-rata 4 kuartalnya tetap tepat 5.5% setahun.
+  </div>
+
+  <h3>C. Bagaimana Cara Menambal Data Bolong (Missing Values)?</h3>
+  <p>
+    Beberapa negara punya data yang belum lengkap (misal Laos uang beredarnya cuma ada tahun 2010, atau Myanmar nilai tukarnya kosong sebelum reformasi kurs 2012).
+  </p>
+  <ul>
+    <li><strong>Prinsip Kejujuran:</strong> Kita tidak pernah berpura-pura bahwa data tambalan adalah data asli.</li>
+    <li><strong>Sheet Audit Imputasi:</strong> Setiap ada 1 angka yang kita tebak/ekstrapolasi, kita catat di buku tamu khusus (<code>Imputation_Audit</code>) beserta alasannya. Total ada <strong>191 angka</strong> yang diimputasi dengan hati-hati.</li>
+    <li><strong>Kode Kualitas:</strong> Baris data diberi label warna: Hijau (asli 100%), Kuning (1 data tambalan), Oranye (lebih dari 1 data tambalan).</li>
+  </ul>
+
+  <!-- BAB 2 -->
+  <h2>2. Medical Check-up Data (Uji Karakteristik Sebelum Memilih Model)</h2>
+  <p>
+    Sebelum dokter memberikan obat, pasien harus dites tensi, gula darah, dan rontgen. Di ekonometrika, kita melakukan tes kesehatan data agar kita tidak salah memilih rumus analisis.
+  </p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-label">Uji 1: Pesaran CD Test</div>
+      <div class="card-num">Stat = 10.03</div>
+      <div class="card-desc"><strong>Pertanyaan:</strong> Apakah negara ASEAN saling tertular flu ekonomi?<br>
+      <strong>Hasil:</strong> <em>Tolak H0 (p < 0.0001)</em>. Artinya, ekonomi negara-negara ASEAN sangat erat saling terhubung. Guncangan di satu negara menjalar ke tetangganya!</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Uji 2: Unit Root Test</div>
+      <div class="card-num">I(0) Stasioner</div>
+      <div class="card-desc"><strong>Pertanyaan:</strong> Apakah datanya stabil atau mabuk jalanan?<br>
+      <strong>Hasil:</strong> Data pertumbuhan dan perubahan kurs terbukti stasioner (bergerak di sekitar rata-ratanya), sehingga aman dianalisis tanpa bahaya regresi palsu (<em>spurious regression</em>).</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Uji 3: Uji Kointegrasi Johansen</div>
+      <div class="card-num">2 Hubungan Kointegrasi</div>
+      <div class="card-desc"><strong>Pertanyaan:</strong> Apakah variabel-variabel ini punya ikatan jodoh jangka panjang?<br>
+      <strong>Hasil:</strong> Ada bukti kointegrasi kuat. Inflasi, output, kurs, dan uang beredar tidak akan kabur berantakan dalam jangka panjang.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Uji 4: Lag Selection (BIC/SC)</div>
+      <div class="card-num">Lag = 2 Kuartal</div>
+      <div class="card-desc"><strong>Pertanyaan:</strong> Berapa lama masa lalu masih diingat pasar?<br>
+      <strong>Hasil:</strong> 2 Kuartal (6 bulan). Keputusan ekonomi masa lalu selama 6 bulan terakhir yang paling dominan memengaruhi inflasi hari ini.</div>
+    </div>
+  </div>
+
+  <!-- BAB 3 -->
+  <h2>3. Mengapa Memilih Model VARX dan Panel Fixed Effects?</h2>
+  <p>
+    Kenapa kita tidak memakai regresi biasa yang sederhana (seperti garis lurus $Y = a + bX$)?
+  </p>
+  <div class="analogi-box">
+    <div class="analogi-title">💡 Analogi Dua Petinju yang Saling Pukul (Hubungan Dua Arah)</div>
+    Di dunia nyata:
+    <ul>
+      <li>Kalau harga barang naik (inflasi), bank sentral akan menaikkan suku bunga.</li>
+      <li>Tapi kalau suku bunga naik, biaya pinjaman naik, orang hemat belanja, lalu inflasi turun.</li>
+      <li>Jadi siapa penyebab siapa? Keduanya saling memengaruhi!</li>
+    </ul>
+    Regresi biasa berasumsi $X$ memengaruhi $Y$ secara searah tanpa ampun. Model <strong>VAR (Vector Autoregression)</strong> menganggap semua pemain di lapangan bisa saling lempar bola secara bersamaan!
+  </div>
+
+  <p>
+    <strong>Lalu apa itu huruf 'X' di VARX?</strong><br>
+    Huruf 'X' artinya <em>eXogenous</em> (pemain luar gelanggang). Contohnya:
+  </p>
+  <ul>
+    <li><strong>Harga Minyak Mentah Dunia:</strong> Perang di Timur Tengah menaikkan harga minyak dunia, dan negara ASEAN harus menerima harga itu dari pasar internasional. ASEAN tidak bisa mendikte harga minyak dunia sendirian.</li>
+    <li><strong>Suku Bunga Bank Sentral AS (Federal Funds Rate):</strong> Keputusan The Fed di Washington dibuat berdasarkan ekonomi AS, tapi dampaknya langsung mengguncang seluruh dunia termasuk Asia Tenggara.</li>
+    <li><strong>Indeks Pangan FAO:</strong> Guncangan panen global dan cuaca El Nino memengaruhi harga beras dan gandum dunia.</li>
+  </ul>
+  <p>
+    Dengan <strong>VARX</strong>, variabel domestik (Inflasi, PDB, Uang Beredar, Nilai Tukar) saling berinteraksi bebas di dalam negeri, sementara variabel luar negeri (Minyak, FAO, FFR) masuk sebagai guncangan eksternal!
+  </p>
+
+  <!-- BAB 4 -->
+  <h2>4. Membaca Hasil Angka Tanpa Pusing (Decoding Output Regresi)</h2>
+  <p>
+    Berikut adalah tabel hasil regresi persamaan inflasi yang sebenarnya. Mari kita bedah satu per satu maknanya dalam bahasa manusia:
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Variabel Pemicu</th>
+        <th>Nilai Koefisien</th>
+        <th>Signifikansi (p-value)</th>
+        <th>Arti Gampangnya untuk Kehidupan Nyata</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Inflasi Kuartal Lalu (Lag 1)</strong></td>
+        <td><strong>+0.7746</strong></td>
+        <td><span class="badge badge-green">Sangat Kuat (p < 0.0001)</span></td>
+        <td><strong>Efek Inersia:</strong> Inflasi itu seperti kereta bermuatan berat. Kalau kuartal lalu sudah melaju kencang, kuartal ini pasti masih ngebut dan susah ngerem mendadak.</td>
+      </tr>
+      <tr>
+        <td><strong>Perubahan Suku Bunga The Fed AS (&Delta; FFR)</strong></td>
+        <td><strong>+1.1712</strong></td>
+        <td><span class="badge badge-green">Sangat Kuat (p = 0.000002)</span></td>
+        <td><strong>Efek Dolar:</strong> Setiap The Fed menaikkan suku bunga 1%, modal asing kabur ke AS, rupiah/ringgit/baht melemah, harga barang impor jadi mahal, dan inflasi ASEAN melonjak lebih dari 1%!</td>
+      </tr>
+      <tr>
+        <td><strong>Harga Minyak Dunia (YoY)</strong></td>
+        <td><strong>+0.0114</strong></td>
+        <td><span class="badge badge-green">Kuat (p = 0.00076)</span></td>
+        <td><strong>Efek SPBU & Logistik:</strong> Minyak dunia naik &rarr; biaya bensin dan ongkos truk angkut barang naik &rarr; harga cabai dan tahu di pasar ikut naik.</td>
+      </tr>
+      <tr>
+        <td><strong>Harga Pangan Global FAO (YoY)</strong></td>
+        <td><strong>+0.0236</strong></td>
+        <td><span class="badge badge-blue">Kuat (p = 0.0413)</span></td>
+        <td><strong>Efek Dapur:</strong> Makanan adalah porsi pengeluaran terbesar masyarakat ASEAN. Pangan dunia naik langsung menyengat kantong ibu rumah tangga.</td>
+      </tr>
+      <tr>
+        <td><strong>Apresiasi Kurs Riil (REER)</strong></td>
+        <td><strong>-0.0473</strong> (di model Panel)</td>
+        <td><span class="badge badge-green">Kuat (p = 0.00003)</span></td>
+        <td><strong>Peredam Kejut:</strong> Kalau mata uang domestik menguat (kurs naik), harga barang impor jadi lebih murah, sehingga inflasi bisa ditekan turun.</td>
+      </tr>
+      <tr>
+        <td><strong>Pertumbuhan Uang Beredar (Money Growth)</strong></td>
+        <td><strong>Kausalitas Granger Positif</strong></td>
+        <td><span class="badge badge-blue">Kausalitas Valid (p = 0.0296)</span></td>
+        <td><strong>Hukum Klasik:</strong> Kalau uang yang beredar di masyarakat bertambah terlalu banyak tapi barang yang dijual tetap sama, nilai uang turun dan harga-harga melonjak.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="awam-box">
+    <div class="awam-title">💡 Apa Itu Nilai p-value?</div>
+    Sering melihat tulisan $p < 0.05$? Artinya sederhana: <em>"Berapa persen kemungkinan angka ini cuma terjadi karena kebetulan belaka?"</em><br>
+    Jika $p = 0.000002$ (seperti pada suku bunga The Fed), artinya kemungkinan hubungan ini terjadi secara kebetulan hanya 0.0002% (dua per sejuta). Dengan kata lain, hubungannya <strong>hampir 100% nyata dan terbukti secara ilmiah</strong>!
+  </div>
+
+  <!-- BAB 5 -->
+  <h2>5. Menatap Masa Depan: IRF dan FEVD</h2>
+  <p>
+    Model ekonometrika yang bagus bukan cuma menjelaskan apa yang sudah terjadi, tapi juga bisa melakukan <strong>simulasi skenario masa depan</strong>.
+  </p>
+
+  <h3>A. Impulse Response Function (IRF): Kalau Dilempar Batu, Ombaknya Berapa Lama?</h3>
+  <div class="analogi-box">
+    <div class="analogi-title">💡 Analogi Kolam Air Tenang</div>
+    Bayangkan kolam air tenang (kondisi ekonomi normal). Tiba-tiba ada orang melempar batu bata besar (kejutan perang minyak atau The Fed menaikkan bunga dadakan).<br>
+    <strong>IRF mengukur dua hal:</strong>
+    <ol>
+      <li>Seberapa tinggi cipratan airnya? (Besarnya dampak ke inflasi).</li>
+      <li>Berapa kuartal sampai permukaan kolam tenang kembali? (Berapa lama efek guncangan bertahan).</li>
+    </ol>
+  </div>
+  <p>
+    <strong>Hasil Temuan Nyata Kita:</strong>
+    Ketika terjadi guncangan inflasi di ASEAN, dampaknya membutuhkan waktu <strong>6 sampai 8 kuartal (1.5 hingga 2 tahun)</strong> untuk melandai kembali ke titik normal. Artinya, penanganan inflasi tidak bisa instan selesai dalam 1 atau 2 bulan!
+  </p>
+
+  <h3>B. Forecast Error Variance Decomposition (FEVD): Siapa Biang Kerok Utama?</h3>
+  <p>
+    Kalau ramalan cuaca bilang besok cerah tapi ternyata hujan badai, pasti ada faktor yang meleset. Di inflasi, <strong>FEVD menghitung siapa penyumbang terbesar kesalahan tebakan inflasi dari waktu ke waktu</strong>:
+  </p>
+  <ul>
+    <li><strong>Kuartal 1 (Bulan ke-1 s.d. 3):</strong> <strong>78.8%</strong> variasi inflasi disebabkan oleh guncangan internal harga itu sendiri (kebiasaan harga naik).</li>
+    <li><strong>Kuartal 4 (Bulan ke-12 / 1 Tahun Kemudian):</strong> Peran nilai tukar riil (REER) melonjak dahsyat menjadi <strong>44.4%</strong>!</li>
+  </ul>
+  <div class="quote-takeaway">
+    <strong>Pesan Penting:</strong> Dalam jangka sangat pendek (3 bulan), inflasi sangat kaku karena faktor kebiasaan pasar. Namun dalam jangka menengah (1 tahun), <strong>stabilitas nilai tukar mata uang adalah penentu nomor satu</strong> apakah inflasi negara ASEAN akan melompat liar atau tetap adem ayem.
+  </div>
+
+  <!-- BAB 6 -->
+  <h2>6. Uji Ketahanan Model (Quality Assurance: Apakah Model Ini Bisa Dipercaya?)</h2>
+  <p>
+    Sebagus apa pun hasil analisis, seorang peneliti wajib menguji apakah modelnya rapuh atau kokoh. Kita melakukan 4 uji ketahanan:
+  </p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-label">Uji Stabilitas Sistem</div>
+      <div class="card-num">&#10003; Modulus < 1</div>
+      <div class="card-desc">Semua akar sistem berada di dalam lingkaran satuan (maksimal 0.9719). Artinya model kita tidak akan pernah 'meledak' menuju angka tak terhingga.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Uji Heteroskedastisitas (ARCH)</div>
+      <div class="card-num">&#10003; p = 0.4019</div>
+      <div class="card-desc">Angka p > 0.05 membuktikan bahwa varians galat stabil dan tidak ada gejolak misterius yang tertinggal di residual.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Uji Normalitas Residual</div>
+      <div class="card-num">&#10003; p = 0.0813</div>
+      <div class="card-desc">Residual berdistribusi normal seperti kurva lonceng yang seimbang, memenuhi syarat asumsi klasik ekonometrika.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Uji Core Sample (Eksklusi)</div>
+      <div class="card-num">&#10003; Hasil Tetap Konsisten</div>
+      <div class="card-desc">Ketika Laos dan Myanmar (yang punya banyak data estimasi) dikeluarkan dari sampel, hasil regresi di 8 negara inti lainnya tetap stabil dan tidak berubah arah!</div>
+    </div>
+  </div>
+
+  <!-- BAB 7 -->
+  <h2>7. Kesimpulan Singkat 3 Menit untuk Siapa Saja</h2>
+  <ol>
+    <li><strong>Inflasi ASEAN Punya Memori Panjang:</strong> Begitu inflasi naik, ekspektasi masyarakat akan menjaganya tetap tinggi selama 1–2 tahun jika tidak diintervensi.</li>
+    <li><strong>The Fed AS Adalah 'Bos Besar':</strong> Kenaikan suku bunga di Amerika Serikat berdampak sangat kuat dan langsung ke inflasi ASEAN lewat jalur pelemahan mata uang.</li>
+    <li><strong>Nilai Tukar Adalah Tameng Terbaik:</strong> Bank sentral di ASEAN (seperti Bank Indonesia, Bank Negara Malaysia, Bank of Thailand, MAS) harus menjaga stabilitas nilai tukar karena pergerakan kurs menyumbang lebih dari 40% variasi inflasi tahunan.</li>
+    <li><strong>Data Diolah Secara Kredibel:</strong> Semua tahapan—mulai dari mengubah data tahunan ke kuartalan tanpa bagi 4 sembarangan, mencatat 191 titik tambalan data secara jujur, hingga 30 sheet Excel yang siap dicek kapan saja—menjadikan riset ini kokoh dan dapat dipertanggungjawabkan di forum akademik maupun pembuat kebijakan.</li>
+  </ol>
+
+  <div class="footer">
+    Dokumen ini disusun sebagai suplemen penjelasan ramah pembaca untuk proyek riset:<br>
+    <strong>Dinamika Inflasi Negara-Negara ASEAN (2010–2025) Menggunakan R, Panel VAR, dan Output Excel Siap Diunduh</strong>.<br>
+    Workbook lengkap: <code>output/ASEAN_Inflation_Quarterly_Final.xlsx</code> &bull; Repositori GitHub: <code>farrasovsky/asean-oil-price-inflation</code>
+  </div>
+
+</div>
+
+</body>
+</html>
