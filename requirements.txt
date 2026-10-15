@@ -1,0 +1,7 @@
+# Dependencies Python untuk Pembangunan Workbook Excel Final 30-Sheet
+# Proyek: Riset Dinamika Inflasi ASEAN
+# Cara instalasi: pip install -r requirements.txt
+
+pandas>=2.0.0
+openpyxl>=3.1.0
+numpy>=1.24.0

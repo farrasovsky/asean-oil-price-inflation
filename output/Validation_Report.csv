@@ -11,5 +11,5 @@
 "Keunikan Observasi Negara-Kuartal","PASS [OK]","0 baris duplikat"
 "Tipe Data Numerik Kolom Makro","PASS [OK]","hcpi_q, inflation_yoy, gdp_growth terbaca numerik"
 "Keterbacaan Ulang CSV","PASS [OK]","610 baris terbaca dari CSV"
-"Integritas MD5 Checksum Excel","PASS [OK]","5dad18f6ac21123916d8895c49eee876"
+"Integritas MD5 Checksum Excel","PASS [OK]","8e1f76dfa91a12f66e6bff64f3c8d8e4"
 "Integritas MD5 Checksum CSV","PASS [OK]","09e4c5451b7a9f677f3708c4f53abfb0"

@@ -4,11 +4,99 @@ Proyek ekonometrika komprehensif untuk menganalisis dinamika, persistensi, dan t
 
 ---
 
+## 🛠️ Panduan Cepat Menjalankan Proyek di Komputer Lokal (Bagi Pemula / Orang Awam)
+
+Jika Anda baru pertama kali mengunduh atau meng-clone proyek ini ke komputer Anda, ikuti 3 langkah mudah berikut:
+
+### 1. Prasyarat Sistem
+Pastikan di komputer Anda sudah terpasang:
+* **R** (versi $\ge$ 4.0.0) — Unduh gratis di [cran.r-project.org](https://cran.r-project.org/)
+* **Python** (versi $\ge$ 3.8) — Unduh gratis di [python.org](https://www.python.org/)
+* *(Opsional)* **RStudio** — Unduh gratis di [posit.co](https://posit.co/)
+
+---
+
+### 2. Langkah 1: Instalasi Semua Paket R (Cukup 1 Klik / Perintah)
+Buka terminal di folder proyek ini, lalu jalankan:
+
+```bash
+Rscript install_packages.R
+```
+
+> **Jika Anda menggunakan RStudio:**  
+> Cukup buka file `install_packages.R`, lalu klik tombol **"Source"** di pojok kanan atas editor.  
+> Skrip akan secara otomatis memeriksa dan menginstal semua paket R yang belum ada dari repositori resmi CRAN.
+
+---
+
+### 3. Langkah 2: Instalasi Dependensi Python (Untuk Perakitan File Excel)
+Jalankan perintah ini di terminal:
+
+```bash
+pip install -r requirements.txt
+```
+*(Paket yang diinstal hanya `pandas`, `openpyxl`, dan `numpy` untuk membangun workbook Excel 30-sheet berformat elegan).*
+
+---
+
+### 4. Langkah 3: Eksekusi Seluruh Pipeline Riset
+Setelah semua paket terpasang, jalankan:
+
+```bash
+Rscript run_all.R
+```
+
+Skrip ini akan secara otomatis:
+1. Membaca dan mengaudit data mentah Excel sumber.
+2. Membersihkan dan menstandardisasi data 10 negara ASEAN.
+3. Melakukan transformasi kuartalan dan disaggregasi PDB & Money Growth (Denton-Cholette).
+4. Menambal missing data secara transparan dan mencatat log auditnya.
+5. Membentuk dataset panel final 610 baris observasi.
+6. Menghitung statistik deskriptif dan menghasilkan 9 grafik resolusi tinggi (300 DPI).
+7. Menjalankan uji Pesaran CD, Panel Unit Root, dan Kointegrasi Johansen.
+8. Mengestimasi model Regional VARX(2) dan Dynamic Panel Fixed Effects.
+9. Menghitung respons impuls (IRF 12 kuartal) dan varians prediksi (FEVD).
+10. Menjalankan uji kestabilan sistem, korelasi serial, ARCH, dan normalitas.
+11. Merakit workbook Excel 30-sheet (`ASEAN_Inflation_Quarterly_Final.xlsx`) dan file CSV.
+12. Menyusun laporan penelitian ilmiah dalam format HTML.
+13. Melakukan validasi akhir otomatis 14 checklist integritas file.
+
+---
+
+## 📦 Daftar Paket yang Digunakan & Fungsinya
+
+### A. Paket R (`install_packages.R`)
+| Nama Paket | Fungsi Utama dalam Proyek Ini |
+|---|---|
+| **`readxl`** | Membaca sheet data mentah dari file Excel sumber. |
+| **`dplyr`** | Manipulasi data tabel, filtering, agregasi, dan pengurutan data panel. |
+| **`tidyr`** | Mengubah format data dari wide ke long dan sebaliknya. |
+| **`stringr`** | Standardisasi penulisan nama negara dan format kode tanggal. |
+| **`lubridate`** | Operasi kalender waktu, tahun, bulan, dan penentuan kuartal. |
+| **`zoo`** | Operasi deret waktu kuartalan, perhitungan moving average, dan penanganan NA. |
+| **`ggplot2`** | Membuat 9 visualisasi grafik berstandar publikasi ilmiah (300 DPI). |
+| **`plm`** | Analisis ekonometrika data panel (Uji Pesaran CD, Panel Unit Root, Dynamic Panel FE). |
+| **`vars`** | Estimasi Vector Autoregression (VARX), pemilihan lag, IRF Cholesky, dan FEVD. |
+| **`urca`** | Uji kointegrasi multivariat Johansen (Trace & Maximum Eigenvalue). |
+| **`tseries`** | Uji stasioneritas ADF (Augmented Dickey-Fuller) dan KPSS. |
+| **`knitr`** | Pemformatan tabel dan kompilasi laporan riset. |
+
+### B. Paket Python (`requirements.txt`)
+| Nama Paket | Fungsi Utama dalam Proyek Ini |
+|---|---|
+| **`openpyxl`** | Membangun workbook Excel 30 sheet dengan styling Navy header, freeze panes, autofilter, dan conditional formatting. |
+| **`pandas`** | Membaca dataset tabel perantara untuk diekspor ke format Excel. |
+| **`numpy`** | Operasi numerik pendukung perataan data. |
+
+---
+
 ## 📁 Struktur Direktori Proyek
 
 ```text
 olah_oil/
 ├── Kebutuhan Data per Variabel Fix (1).xlsx    # File sumber Excel asli
+├── install_packages.R                          # Skrip instalasi otomatis paket R untuk pengguna baru
+├── requirements.txt                            # Daftar dependensi Python
 ├── run_all.R                                   # Master runner pipeline eksekusi end-to-end
 ├── README.md                                   # Panduan dan dokumentasi proyek
 ├── data/
@@ -89,16 +177,3 @@ olah_oil/
 28. **`FEVD_Data`**: Persentase kontribusi varians prediksi inflasi horizon 1–12 kuartal.
 29. **`Model_Comparison`**: Perbandingan kekokohan (sensitivitas lag, periode sampel, core panel).
 30. **`Results_Summary`**: Ringkasan eksekutif temuan empiris dan rekomendasi kebijakan moneter.
-
----
-
-## 🚀 Cara Menjalankan Ulang Pipeline
-
-Cukup jalankan satu perintah berikut di terminal:
-
-```bash
-Rscript run_all.R
-```
-
-Skrip ini akan secara otomatis mengeksekusi seluruh 14 skrip pengolahan data, membangun visualisasi, merakit file Excel 30 sheet, menyusun laporan HTML, dan memverifikasi integritas seluruh berkas.
-
